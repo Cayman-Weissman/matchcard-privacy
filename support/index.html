@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for Matchcard, the NFL and college football scores app by Cayman Weissman.">
+  <title>Matchcard Support</title>
+  <style>
+    :root {
+      --ink: #12141a;
+      --muted: #4a5160;
+      --line: #d8dde8;
+      --bg: #f7f5f1;
+      --paper: #ffffff;
+      --accent: #0b5f4b;
+      --accent-soft: #e6f3ef;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #e8efe9 0%, transparent 55%),
+        radial-gradient(900px 400px at 100% 0%, #efe8df 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      width: min(760px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    header {
+      margin-bottom: 2.25rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 0.75rem;
+    }
+
+    h1 {
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.75rem;
+      font-weight: 700;
+    }
+
+    .meta {
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    main {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: clamp(1.25rem, 3vw, 2rem);
+      box-shadow: 0 10px 30px rgba(18, 20, 26, 0.04);
+    }
+
+    section { margin: 0 0 2rem; padding-top: 0.25rem; }
+
+    section:last-child { margin-bottom: 0; }
+
+    h2 {
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.25rem;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      color: var(--ink);
+    }
+
+    p { margin: 0 0 0.9rem; }
+
+    ul { margin: 0 0 0.9rem; padding-left: 1.25rem; }
+
+    li { margin: 0.35rem 0; }
+
+    a { color: var(--accent); }
+
+    .note {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 0.9rem 1rem;
+      border-radius: 0 10px 10px 0;
+      margin: 1rem 0;
+    }
+
+    .note p { margin: 0; }
+
+    footer {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    footer p { margin: 0.35rem 0; color: var(--muted); font-size: 0.9rem; }
+
+    .site-nav {
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 0.92rem;
+      margin: 0 0 1.5rem;
+    }
+
+    .site-nav a { color: var(--accent); text-decoration: none; }
+
+    .site-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="site-nav">
+      <a href="../">Privacy Policy</a>
+      ·
+      <a href="./">Support</a>
+    </p>
+
+    <header>
+      <p class="brand">Matchcard</p>
+      <h1>Support</h1>
+      <p class="meta">NFL and college football scores — help &amp; contact</p>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Matchcard</h2>
+        <p>
+          <strong>Matchcard</strong> is an iOS app for NFL and college football (CFB) scores
+          and related game information. It does not include betting features and does not
+          require an account to use.
+        </p>
+      </section>
+
+      <section id="help">
+        <h2>How to get help</h2>
+        <p>
+          For bug reports, feature requests, or general questions about Matchcard, contact
+          the developer through GitHub:
+        </p>
+        <ul>
+          <li>
+            <strong>Open an issue</strong> on the public Matchcard privacy/support repository:
+            <a href="https://github.com/Cayman-Weissman/matchcard-privacy/issues" rel="noopener noreferrer">github.com/Cayman-Weissman/matchcard-privacy/issues</a>
+          </li>
+          <li>
+            <strong>Developer profile:</strong>
+            <a href="https://github.com/Cayman-Weissman" rel="noopener noreferrer">github.com/Cayman-Weissman</a>
+          </li>
+        </ul>
+        <p>
+          Please include your iOS version, device model, and a short description of the
+          problem when reporting a bug. There is no dedicated support email or phone line.
+        </p>
+      </section>
+
+      <section id="accounts">
+        <h2>Accounts &amp; in-app support</h2>
+        <div class="note">
+          <p>
+            Matchcard has <strong>no user accounts</strong>, sign-in, or in-app messaging.
+            We cannot reset passwords, recover account data, or provide account-based support,
+            because none of those features exist in the app.
+          </p>
+        </div>
+        <p>
+          Preferences and local settings live on your device. Removing the app clears that
+          local data.
+        </p>
+      </section>
+
+      <section id="privacy">
+        <h2>Privacy</h2>
+        <p>
+          For how Matchcard handles data, see the
+          <a href="../">Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Developer</h2>
+        <ul>
+          <li><strong>Developer:</strong> Cayman Weissman</li>
+          <li><strong>GitHub:</strong>
+            <a href="https://github.com/Cayman-Weissman" rel="noopener noreferrer">https://github.com/Cayman-Weissman</a>
+          </li>
+          <li><strong>App:</strong> Matchcard (<code>com.cay.SportsApp</code>)</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Cayman Weissman. Matchcard Support.</p>
+      <p>
+        <a href="../">Privacy Policy</a>
+        ·
+        <a href="https://github.com/Cayman-Weissman/matchcard-privacy/issues" rel="noopener noreferrer">Report an issue</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
